@@ -1,0 +1,39 @@
+<mvc:View
+    controllerName="chart.controller.Master"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:viz="sap.viz.ui5"
+    xmlns:viz.data="sap.viz.ui5.data"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <content>
+            <viz:Pie
+                id="pieChart"
+                width="80%"
+                height="80%"
+            >
+                <viz:dataset>
+                    <viz.data:FlattenedDataset data="{/BusinessData}">
+                        <viz.data:dimensions>
+                            <viz.data:DimensionDefinition
+                                axis="1"
+                                name="Country"
+                                value="{Country}"
+                            />
+                        </viz.data:dimensions>
+                        <viz.data:measures>
+                            <viz.data:MeasureDefinition
+                                name="Profit"
+                                value="{profit}"
+                            />
+                        </viz.data:measures>
+                    </viz.data:FlattenedDataset>
+                </viz:dataset>
+            </viz:Pie>
+        </content>
+    </Page>
+</mvc:View>
