@@ -121,7 +121,8 @@
       "flexibleColumnLayout": {
         "defaultTwoColumnLayoutType": "TwoColumnsMidExpanded",
         "defaultThreeColumnLayoutType": "ThreeColumnsMidExpanded"
-      }
+      },
+      "tableColumnVerticalAlignment": "Middle"
     },
     "pages": {
       "ListReport|travel": {
@@ -139,7 +140,9 @@
               }
             },
             "tableSettings": {
-              "type": "ResponsiveTable"
+              "type": "ResponsiveTable",
+              "selectAll": true,
+              "multiSelect": true
             }
           }
         },

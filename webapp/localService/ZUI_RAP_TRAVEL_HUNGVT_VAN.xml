@@ -151,6 +151,9 @@
                         <Record Type="UI.DataField">
                             <PropertyValue Property="Value" Path="OverallStatus"/>
                         </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="CreateBy"/>
+                        </Record>
                     </Collection>
                 </Annotation>
                 <Annotation Term="UI.LineItem">
@@ -179,18 +182,29 @@
                         <Record Type="UI.DataField">
                             <PropertyValue Property="Value" Path="OverallStatus"/>
                         </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="CreateBy"/>
+                        </Record>
                     </Collection>
+                </Annotation>
+                <Annotation Term="UI.PresentationVariant">
+                    <Record>
+                        <PropertyValue Property="SortOrder">
+                            <Collection>
+                                <Record Type="Common.SortOrderType">
+                                    <PropertyValue Property="Property" PropertyPath="TravelId"/>
+                                    <PropertyValue Property="Descending" Bool="true"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
                 </Annotation>
                 <Annotation Term="UI.SelectionFields">
                     <Collection>
                         <PropertyPath>TravelId</PropertyPath>
                         <PropertyPath>AgencyId</PropertyPath>
                         <PropertyPath>CustomerId</PropertyPath>
-                        <PropertyPath>BeginDate</PropertyPath>
-                        <PropertyPath>CurrencyCode</PropertyPath>
-                        <PropertyPath>BookingFee</PropertyPath>
-                        <PropertyPath>TotalPrice</PropertyPath>
-                        <PropertyPath>OverallStatus</PropertyPath>
+                        <PropertyPath>CreateBy</PropertyPath>
                     </Collection>
                 </Annotation>
             </Annotations>
