@@ -42,6 +42,20 @@
           "localUri": "annotations/annotation.xml"
         }
       }
+    },
+    "crossNavigation": {
+      "inbounds": {
+        "ZHUNGVT_TVL-Display": {
+          "semanticObject": "ZHUNGVT_TVL",
+          "action": "Display",
+          "title": "{{flpTitle}}",
+          "subTitle": "{{flpSubtitle}}",
+          "signature": {
+            "parameters": {},
+            "additionalParameters": "allowed"
+          }
+        }
+      }
     }
   },
   "sap.ui": {

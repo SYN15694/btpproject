@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
+
+specVersion: "3.1"
+metadata:
+  name: btpproject
+type: application
+builder:
+  resources:
+    excludes:
+      - /test/**
+      - /localService/**
+  customTasks:
+    - name: deploy-to-abap
+      afterTask: generateCachebusterInfo
+      configuration:
+        target:
+          url: https://8581cf25-e4bd-4b31-a78e-2d30182dcc48.abap.ap21.hana.ondemand.com
+          scp: true
+        app:
+          name: ZBSP_HUNGVT_TVL
+          description: Test deploy
+          package: ZPK_HUNGVT
+          transport: TRLK904184
+        exclude:
+          - /test/
