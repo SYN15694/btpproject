@@ -145,7 +145,6 @@
           "name": "sap.suite.ui.generic.template.ListReport",
           "list": true,
           "settings": {
-            "condensedTableLayout": true,
             "smartVariantManagement": true,
             "enableTableFilterInPageVariant": true,
             "filterSettings": {
@@ -157,6 +156,9 @@
               "type": "ResponsiveTable",
               "selectAll": true,
               "multiSelect": true
+            },
+            "dataLoadSettings": {
+              "loadDataOnAppLaunch": "always"
             }
           }
         },

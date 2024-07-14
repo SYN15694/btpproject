@@ -36,6 +36,12 @@
             <Annotations Target="cds_zsrv_hungvt_travel.bookingType/TravelUuid">
                 <Annotation Term="UI.Hidden"/>
             </Annotations>
+            <Annotations Target="cds_zsrv_hungvt_travel.bookingType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_zsrv_hungvt_travel.bookingType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
             <Annotations Target="cds_zsrv_hungvt_travel.bookingType">
                 <Annotation Term="UI.Facets">
                     <Collection>
@@ -97,6 +103,15 @@
                         </Record>
                     </Collection>
                 </Annotation>
+            </Annotations>
+            <Annotations Target="cds_zsrv_hungvt_travel.travelType/Delete_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_zsrv_hungvt_travel.travelType/Update_mc">
+                <Annotation Term="UI.Hidden"/>
+            </Annotations>
+            <Annotations Target="cds_zsrv_hungvt_travel.travelType/to_booking_oc">
+                <Annotation Term="UI.Hidden"/>
             </Annotations>
             <Annotations Target="cds_zsrv_hungvt_travel.travelType">
                 <Annotation Term="UI.Facets">
