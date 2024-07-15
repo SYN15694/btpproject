@@ -93,7 +93,7 @@
                 <Property Name="BookingUuid" Type="Edm.Guid" Nullable="false" sap:label="UUID" sap:quickinfo="16 Byte UUID in 16 Bytes (Raw Format)" sap:creatable="false" sap:updatable="false"/>
                 <Property Name="TravelUuid" Type="Edm.Guid" sap:label="UUID" sap:quickinfo="16 Byte UUID in 16 Bytes (Raw Format)" sap:creatable="false" sap:updatable="false"/>
                 <Property Name="TravelId" Type="Edm.String" MaxLength="8" sap:display-format="NonNegative" sap:label="Travel ID" sap:quickinfo="Flight Reference Scenario: Travel ID"/>
-                <Property Name="BookingId" Type="Edm.String" MaxLength="4" sap:display-format="NonNegative" sap:label="Booking Number" sap:quickinfo="Flight Reference Scenario: Booking ID"/>
+                <Property Name="BookingId" Type="Edm.String" MaxLength="4" sap:display-format="NonNegative" sap:label="Booking Number" sap:quickinfo="Flight Reference Scenario: Booking ID" sap:creatable="false" sap:updatable="false"/>
                 <Property Name="BookingDate" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Booking Date" sap:quickinfo="Flight Reference Scenario: Booking Date"/>
                 <Property Name="CustomerId" Type="Edm.String" MaxLength="6" sap:display-format="NonNegative" sap:label="Customer ID" sap:quickinfo="Flight Reference Scenario: Customer ID"/>
                 <Property Name="CarrierId" Type="Edm.String" MaxLength="3" sap:display-format="UpperCase" sap:label="Airline ID" sap:quickinfo="Flight Reference Scenario: Carrier ID"/>
@@ -101,7 +101,7 @@
                 <Property Name="FlightDate" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Flight Date" sap:quickinfo="Flight Reference Scenario: Flight Date"/>
                 <Property Name="FlightPrice" Type="Edm.Decimal" Precision="17" Scale="3" sap:label="Flight Price" sap:quickinfo="Flight Reference Scenario: Flight Price"/>
                 <Property Name="CurrencyCode" Type="Edm.String" MaxLength="5" sap:label="Currency Code" sap:quickinfo="Flight Reference Scenario: Currency Code" sap:semantics="currency-code"/>
-                <Property Name="CreatedBy" Type="Edm.String" MaxLength="12" sap:display-format="UpperCase" sap:label="User Name"/>
+                <Property Name="CreatedBy" Type="Edm.String" MaxLength="12" sap:display-format="UpperCase" sap:label="User Name" sap:creatable="false" sap:updatable="false"/>
                 <NavigationProperty Name="to_currency" Relationship="cds_zsrv_hungvt_travel.assoc_12A3EEC726BE5BE27510022D1B3F7F81" FromRole="FromRole_assoc_12A3EEC726BE5BE27510022D1B3F7F81" ToRole="ToRole_assoc_12A3EEC726BE5BE27510022D1B3F7F81"/>
                 <NavigationProperty Name="to_travel" Relationship="cds_zsrv_hungvt_travel.assoc_BD5825531969DC8B7B75B8448561DC27" FromRole="ToRole_assoc_BD5825531969DC8B7B75B8448561DC27" ToRole="FromRole_assoc_BD5825531969DC8B7B75B8448561DC27"/>
             </EntityType>
@@ -113,18 +113,18 @@
                 <Property Name="Update_mc" Type="Edm.Boolean" sap:label="Dyn. Method Control" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
                 <Property Name="to_booking_oc" Type="Edm.Boolean" sap:label="Dynamic CbA-Control" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
                 <Property Name="TravelUuid" Type="Edm.Guid" Nullable="false" sap:label="UUID" sap:quickinfo="16 Byte UUID in 16 Bytes (Raw Format)" sap:creatable="false" sap:updatable="false"/>
-                <Property Name="TravelId" Type="Edm.String" MaxLength="8" sap:display-format="NonNegative" sap:label="Travel ID" sap:quickinfo="Flight Reference Scenario: Travel ID"/>
+                <Property Name="TravelId" Type="Edm.String" MaxLength="8" sap:display-format="NonNegative" sap:label="Travel ID" sap:quickinfo="Flight Reference Scenario: Travel ID" sap:creatable="false" sap:updatable="false"/>
                 <Property Name="AgencyId" Type="Edm.String" MaxLength="6" sap:display-format="NonNegative" sap:text="AgencyName" sap:label="Agency ID" sap:quickinfo="Flight Reference Scenario: Agency ID" sap:value-list="standard"/>
                 <Property Name="AgencyName" Type="Edm.String" MaxLength="80" sap:label="Agency Name" sap:quickinfo="Flight Reference Scenario: Agency Name" sap:creatable="false" sap:updatable="false"/>
                 <Property Name="CustomerId" Type="Edm.String" MaxLength="6" sap:display-format="NonNegative" sap:label="Customer ID" sap:quickinfo="Flight Reference Scenario: Customer ID"/>
                 <Property Name="BeginDate" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Starting Date" sap:quickinfo="Flight Reference Scenario: Start Date"/>
                 <Property Name="CurrencyCode" Type="Edm.String" MaxLength="5" sap:label="Currency Code" sap:quickinfo="Flight Reference Scenario: Currency Code" sap:value-list="standard" sap:semantics="currency-code"/>
                 <Property Name="BookingFee" Type="Edm.Decimal" Precision="16" Scale="3" sap:unit="CurrencyCode" sap:variable-scale="true" sap:label="Booking Fee" sap:quickinfo="Flight Reference Scenario: Booking Fee"/>
-                <Property Name="TotalPrice" Type="Edm.Decimal" Precision="16" Scale="3" sap:unit="CurrencyCode" sap:variable-scale="true" sap:label="Total Price" sap:quickinfo="Flight Reference Scenario: Total Price"/>
+                <Property Name="TotalPrice" Type="Edm.Decimal" Precision="16" Scale="3" sap:unit="CurrencyCode" sap:variable-scale="true" sap:label="Total Price" sap:quickinfo="Flight Reference Scenario: Total Price" sap:creatable="false" sap:updatable="false"/>
                 <Property Name="Description" Type="Edm.String" MaxLength="1024" sap:label="Description" sap:quickinfo="Flight Reference Scenario: Description"/>
-                <Property Name="OverallStatus" Type="Edm.String" MaxLength="1" sap:display-format="UpperCase" sap:label="Overall Status" sap:quickinfo="Flight Reference Scenario: Travel Status"/>
-                <Property Name="CreateBy" Type="Edm.String" MaxLength="12" sap:display-format="UpperCase" sap:label="User Name"/>
-                <Property Name="CreateAt" Type="Edm.DateTimeOffset" Precision="7" sap:label="Time Stamp" sap:quickinfo="UTC Time Stamp in Long Form (YYYYMMDDhhmmssmmmuuun)"/>
+                <Property Name="OverallStatus" Type="Edm.String" MaxLength="1" sap:display-format="UpperCase" sap:label="Overall Status" sap:quickinfo="Flight Reference Scenario: Travel Status" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="CreateBy" Type="Edm.String" MaxLength="12" sap:display-format="UpperCase" sap:label="User Name" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="CreateAt" Type="Edm.DateTimeOffset" Precision="7" sap:label="Time Stamp" sap:quickinfo="UTC Time Stamp in Long Form (YYYYMMDDhhmmssmmmuuun)" sap:creatable="false" sap:updatable="false"/>
                 <NavigationProperty Name="to_booking" Relationship="cds_zsrv_hungvt_travel.assoc_BD5825531969DC8B7B75B8448561DC27" FromRole="FromRole_assoc_BD5825531969DC8B7B75B8448561DC27" ToRole="ToRole_assoc_BD5825531969DC8B7B75B8448561DC27"/>
                 <NavigationProperty Name="to_currency" Relationship="cds_zsrv_hungvt_travel.assoc_9706136D8516C84AB340D7A929BDEF97" FromRole="FromRole_assoc_9706136D8516C84AB340D7A929BDEF97" ToRole="ToRole_assoc_9706136D8516C84AB340D7A929BDEF97"/>
             </EntityType>
@@ -537,7 +537,7 @@
                         </PropertyValue>
                     </Record>
                 </Annotation>
-                <Annotation Term="Common.FieldControl" EnumMember="Common.FieldControlType/Optional"/>
+                <Annotation Term="Common.FieldControl" EnumMember="Common.FieldControlType/Mandatory"/>
             </Annotations>
             <Annotations Target="cds_zsrv_hungvt_travel.travelType/CurrencyCode" xmlns="http://docs.oasis-open.org/odata/ns/edm">
                 <Annotation Term="Common.ValueList">
@@ -849,16 +849,10 @@
             <Annotations Target="cds_zsrv_hungvt_travel.bookingType/BookingDate" xmlns="http://docs.oasis-open.org/odata/ns/edm">
                 <Annotation Term="Common.FieldControl" EnumMember="Common.FieldControlType/Optional"/>
             </Annotations>
-            <Annotations Target="cds_zsrv_hungvt_travel.bookingType/BookingId" xmlns="http://docs.oasis-open.org/odata/ns/edm">
-                <Annotation Term="Common.FieldControl" EnumMember="Common.FieldControlType/Optional"/>
-            </Annotations>
             <Annotations Target="cds_zsrv_hungvt_travel.bookingType/CarrierId" xmlns="http://docs.oasis-open.org/odata/ns/edm">
                 <Annotation Term="Common.FieldControl" EnumMember="Common.FieldControlType/Optional"/>
             </Annotations>
             <Annotations Target="cds_zsrv_hungvt_travel.bookingType/ConnectionId" xmlns="http://docs.oasis-open.org/odata/ns/edm">
-                <Annotation Term="Common.FieldControl" EnumMember="Common.FieldControlType/Optional"/>
-            </Annotations>
-            <Annotations Target="cds_zsrv_hungvt_travel.bookingType/CreatedBy" xmlns="http://docs.oasis-open.org/odata/ns/edm">
                 <Annotation Term="Common.FieldControl" EnumMember="Common.FieldControlType/Optional"/>
             </Annotations>
             <Annotations Target="cds_zsrv_hungvt_travel.bookingType/CurrencyCode" xmlns="http://docs.oasis-open.org/odata/ns/edm">
@@ -882,25 +876,10 @@
             <Annotations Target="cds_zsrv_hungvt_travel.travelType/BookingFee" xmlns="http://docs.oasis-open.org/odata/ns/edm">
                 <Annotation Term="Common.FieldControl" EnumMember="Common.FieldControlType/Optional"/>
             </Annotations>
-            <Annotations Target="cds_zsrv_hungvt_travel.travelType/CreateAt" xmlns="http://docs.oasis-open.org/odata/ns/edm">
-                <Annotation Term="Common.FieldControl" EnumMember="Common.FieldControlType/Optional"/>
-            </Annotations>
-            <Annotations Target="cds_zsrv_hungvt_travel.travelType/CreateBy" xmlns="http://docs.oasis-open.org/odata/ns/edm">
-                <Annotation Term="Common.FieldControl" EnumMember="Common.FieldControlType/Optional"/>
-            </Annotations>
             <Annotations Target="cds_zsrv_hungvt_travel.travelType/CustomerId" xmlns="http://docs.oasis-open.org/odata/ns/edm">
-                <Annotation Term="Common.FieldControl" EnumMember="Common.FieldControlType/Optional"/>
+                <Annotation Term="Common.FieldControl" EnumMember="Common.FieldControlType/Mandatory"/>
             </Annotations>
             <Annotations Target="cds_zsrv_hungvt_travel.travelType/Description" xmlns="http://docs.oasis-open.org/odata/ns/edm">
-                <Annotation Term="Common.FieldControl" EnumMember="Common.FieldControlType/Optional"/>
-            </Annotations>
-            <Annotations Target="cds_zsrv_hungvt_travel.travelType/OverallStatus" xmlns="http://docs.oasis-open.org/odata/ns/edm">
-                <Annotation Term="Common.FieldControl" EnumMember="Common.FieldControlType/Optional"/>
-            </Annotations>
-            <Annotations Target="cds_zsrv_hungvt_travel.travelType/TotalPrice" xmlns="http://docs.oasis-open.org/odata/ns/edm">
-                <Annotation Term="Common.FieldControl" EnumMember="Common.FieldControlType/Optional"/>
-            </Annotations>
-            <Annotations Target="cds_zsrv_hungvt_travel.travelType/TravelId" xmlns="http://docs.oasis-open.org/odata/ns/edm">
                 <Annotation Term="Common.FieldControl" EnumMember="Common.FieldControlType/Optional"/>
             </Annotations>
             <Annotations Target="cds_zsrv_hungvt_travel.agencyType/MimeType" xmlns="http://docs.oasis-open.org/odata/ns/edm">
