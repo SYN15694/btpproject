@@ -13,7 +13,7 @@
     </edmx:Reference>
     <edmx:DataServices>
         <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="local">
-            <Annotations Target="cds_zsrv_hungvt_travel.travelType">
+            <!-- <Annotations Target="cds_zsrv_hungvt_travel.travelType">
                 <Annotation Term="Common.SideEffects">
                     <Record>
                         <PropertyValue Property="SourceProperties">
@@ -28,7 +28,7 @@
                         </PropertyValue>
                     </Record>
                 </Annotation>
-            </Annotations>
+            </Annotations> -->
             <Annotations Target="cds_zsrv_hungvt_travel.bookingType" >
 	<Annotation Term="Common.SideEffects" >
 		<Record >
