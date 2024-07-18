@@ -155,7 +155,7 @@
             "tableSettings": {
               "type": "ResponsiveTable",
               "selectAll": true,
-              "multiSelect": true
+              "multiSelect": false
             },
             "dataLoadSettings": {
               "loadDataOnAppLaunch": "always"
@@ -167,7 +167,16 @@
             "entitySet": "travel",
             "defaultLayoutTypeIfExternalNavigation": "MidColumnFullScreen",
             "component": {
-              "name": "sap.suite.ui.generic.template.ObjectPage"
+              "name": "sap.suite.ui.generic.template.ObjectPage",
+              "settings": {
+                "sections": {
+                  "Booking": {
+                    "tableSettings": {
+                      "multiSelect": true
+                    }
+                  }
+                }
+              }
             },
             "pages": {
               "ObjectPage|to_booking": {
