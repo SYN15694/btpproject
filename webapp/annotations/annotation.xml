@@ -13,21 +13,9 @@
     </edmx:Reference>
     <edmx:DataServices>
         <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="local">
-            <!-- <Annotations Target="cds_zsrv_hungvt_travel.travelType">
-                <Annotation Term="Common.SideEffects">
-                    <Record>
-                        <PropertyValue Property="SourceProperties">
-                            <Collection>
-                                <PropertyPath>BookingFee</PropertyPath>
-                            </Collection>
-                        </PropertyValue>
-                       <PropertyValue Property="TargetProperties">
-                            <Collection>
-                                <PropertyPath>TotalPrice</PropertyPath>
-                            </Collection>
-                        </PropertyValue>
-                    </Record>
-                </Annotation>
+            <!-- <Annotations Target="cds_zsrv_hungvt_travel/travel">
+                  <Annotation Term="Common.DefaultValuesFunction" String="DefaultForCreate">                                   
+       </Annotation>
             </Annotations> -->
             <Annotations Target="cds_zsrv_hungvt_travel.bookingType" >
 	<Annotation Term="Common.SideEffects" >
