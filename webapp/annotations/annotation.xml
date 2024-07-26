@@ -13,26 +13,26 @@
     </edmx:Reference>
     <edmx:DataServices>
         <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="local">
-            <!-- <Annotations Target="cds_zsrv_hungvt_travel/travel">
-                  <Annotation Term="Common.DefaultValuesFunction" String="DefaultForCreate">                                   
-       </Annotation>
-            </Annotations> -->
-            <Annotations Target="cds_zsrv_hungvt_travel.bookingType" >
-	<Annotation Term="Common.SideEffects" >
-		<Record >
-			<PropertyValue Property="SourceProperties" >
-				<Collection>
-					<PropertyPath>FlightPrice</PropertyPath>
-				</Collection>                            
-			</PropertyValue>
-			<PropertyValue Property="TargetEntities" >
-				<Collection >
-					<NavigationPropertyPath >to_travel</NavigationPropertyPath>
-				</Collection>
-			</PropertyValue>
-		</Record>
-	</Annotation>
-</Annotations>
+        
+            <Annotations Target="cds_zsrv_hungvt_travel.cds_zsrv_hungvt_travel_Entities/travel">
+                <Annotation Term="Common.DefaultValuesFunction" String="DefaultForCreate" />
+            </Annotations>
+            <Annotations Target="cds_zsrv_hungvt_travel.bookingType">
+                <Annotation Term="Common.SideEffects">
+                    <Record>
+                        <PropertyValue Property="SourceProperties">S
+                            <Collection>
+                                <PropertyPath>FlightPrice</PropertyPath>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="TargetEntities">
+                            <Collection>
+                                <NavigationPropertyPath>to_travel</NavigationPropertyPath>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
         </Schema>
     </edmx:DataServices>
 </edmx:Edmx>
