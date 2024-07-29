@@ -13,7 +13,6 @@
     </edmx:Reference>
     <edmx:DataServices>
         <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="local">
-        
             <Annotations Target="cds_zsrv_hungvt_travel.cds_zsrv_hungvt_travel_Entities/travel">
                 <Annotation Term="Common.DefaultValuesFunction" String="DefaultForCreate" />
             </Annotations>
